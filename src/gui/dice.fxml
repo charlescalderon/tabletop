@@ -20,22 +20,22 @@
   <VBox id="vbox-dice" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.rowSpan="3">
   	
   	<HBox id="dice-d20-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d4" text="D4" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
+  		<Button id="dice-d4" text="D4" onAction="#rollDice" minWidth="100" minHeight="75" />
   	</HBox>
   	<HBox id="dice-d6-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d6" text="D6" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
+  		<Button id="dice-d6" text="D6" onAction="#rollDice" minWidth="100" minHeight="75" />
   	</HBox>
   	<HBox id="dice-d8-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d8" text="D8" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
+  		<Button id="dice-d8" text="D8" onAction="#rollDice" minWidth="100" minHeight="75" />
   	</HBox>
   	<HBox id="dice-d10-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d10" text="D10" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
+  		<Button id="dice-d10" text="D10" onAction="#rollDice" minWidth="100" minHeight="75" />
   	</HBox>
   	<HBox id="dice-d12-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d12" text="D12" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
+  		<Button id="dice-d12" text="D12" onAction="#rollDice" minWidth="100" minHeight="75" />
   	</HBox>
   	<HBox id="dice-d20-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d20" text="D20" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
+  		<Button id="dice-d20" text="D20" onAction="#rollDice" minWidth="100" minHeight="75" />
   	</HBox>
   </VBox>
   
