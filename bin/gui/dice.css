@@ -1,0 +1,75 @@
+.root {
+     -fx-background-image: url("../img/background.jpg");
+}
+
+#page-title {
+	-fx-font-size: 32px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #818181;
+	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#control-volume {
+	-fx-text-fill: red;
+	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#control-acct {
+	-fx-text-fill: green;
+	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#control-menu {
+	-fx-text-fill: blue;
+	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.box {
+	-fx-background-color: green;
+}
+
+.die {
+	-fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    -fx-text-alignment: center;
+}
+
+.die:hover {
+}
+
+.die .button {
+	-fx-background-size: 75 75;
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+
+.die .button:hover {
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#dice-d4 {
+	-fx-background-image: url("../img/D4.png");
+}
+
+#dice-d6 {
+	-fx-background-image: url("../img/D6.png");
+}
+
+#dice-d8 {
+	-fx-background-image: url("../img/D8.png");
+}
+
+#dice-d10 {
+	-fx-background-image: url("../img/D10.png");
+}
+
+#dice-d12 {
+	-fx-background-image: url("../img/D12.png");
+}
+
+#dice-d20 {
+	-fx-background-image: url("../img/D20.png");
+}
