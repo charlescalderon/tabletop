@@ -1,13 +1,17 @@
 package gui;
 
+import java.net.URL;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.media.AudioClip;
 import javafx.scene.text.Text;
 import lib.Dice;
 
 public class diceController {
-	@FXML private Text diceText;
+	@FXML private Text tickerText;
+	@FXML private Text rollName;
     
     @FXML protected void rollDice(ActionEvent event) {
     	
@@ -30,6 +34,14 @@ public class diceController {
     	
     	int result = roll[0];
     	
-    	diceText.setText("You rolled 1D" + Integer.toString(die) + " and got " + Integer.toString(result));
+    	// Set audio file for chosen die
+    	final URL resource = getClass().getResource("../audio/d" + Integer.toString(die) + ".wav");
+    	
+    	// Play audio click
+    	AudioClip dieRole = new AudioClip(resource.toString());
+    	dieRole.play();
+    	
+    	tickerText.setText("You rolled 1D" + Integer.toString(die) + " and got " + Integer.toString(result));
+    	rollName.setText(Integer.toString(result));
     }
 }

@@ -1,5 +1,6 @@
 .root {
      -fx-background-image: url("../img/background.jpg");
+     -fx-display: block;
 }
 
 #page-title {
@@ -9,7 +10,19 @@
 	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
 
-#control-volume {
+#rollName {
+	-fx-font-size: 32px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #818181;
+	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#vbox-ticker {
+	-fx-background-color: white;
+	-fx-width: 200px;
+}
+
+#control-home {
 	-fx-text-fill: red;
 	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
 }
@@ -48,6 +61,10 @@
 
 .die .button:hover {
 	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.die .button:active {
+	-fx-opactiy: 10;
 }
 
 #dice-d4 {

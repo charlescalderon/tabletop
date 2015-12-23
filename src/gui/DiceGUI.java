@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class DiceGUI extends Application {
@@ -14,8 +15,11 @@ public class DiceGUI extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("dice.fxml"));
         
         stage.setTitle("AD&D Dice Toolkit");
+        stage.getIcons().add(new Image(this.getClass().getResourceAsStream("../img/D20.png")));
         stage.setScene(new Scene(root, 1024, 768));
         stage.show();
+        
+
     }
     
     public static void main(String[] args) {
