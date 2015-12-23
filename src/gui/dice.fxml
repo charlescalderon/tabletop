@@ -14,25 +14,27 @@
   <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
   
   <!-- Title -->
-  <Text id="page-title" text="Dice toolkit" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" />
-  
-  <!-- Roll result -->
-  <Text fx:id="rollName" text="Roll" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.columnSpan="2" />
-  
+  <Text id="page-title" text="Dice toolkit" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3" />
   
   <!-- Dice row 1 -->
-  <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="2" GridPane.rowIndex="1">
-	<Button id="dice-d4" text="D4" onAction="#rollDice" minWidth="100" minHeight="75" />
- 	<Button id="dice-d6" text="D6" onAction="#rollDice" minWidth="100" minHeight="75" />
- 	<Button id="dice-d8" text="D8" onAction="#rollDice" minWidth="100" minHeight="75" />
+  <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="1">
+	<Button id="dice-d4" text="D4" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d6" text="D6" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d8" text="D8" onAction="#rollDice" minWidth="75" minHeight="75" />
   </HBox>
   
   <!-- Dice row 2 -->
-  <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="2" GridPane.rowIndex="2">
-	<Button id="dice-d10" text="D10" onAction="#rollDice" minWidth="100" minHeight="75" />
- 	<Button id="dice-d12" text="D12" onAction="#rollDice" minWidth="100" minHeight="75" />
- 	<Button id="dice-d20" text="D20" onAction="#rollDice" minWidth="100" minHeight="75" />
+  <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="2">
+	<Button id="dice-d10" text="D10" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d12" text="D12" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d20" text="D20" onAction="#rollDice" minWidth="75" minHeight="75" />
   </HBox>
+  
+  <!-- Roll result -->
+  <VBox id="vbox-result" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="2" alignment="center" minWidth="100">
+  	<Text fx:id="rollName" text="Roll" />
+  </VBox>
+  
   
   <!-- Ticker -->
   <VBox id="vbox-ticker" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="3">
