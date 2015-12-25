@@ -49,7 +49,7 @@ public class Dice {
 		
 		// Perform rolls
 		int n = 0;
-		
+
 		while (n < rollNum) {
 			results[n] = (int)randGen.nextInt(rollDie) + 1;
 			n++;

@@ -14,7 +14,9 @@
   <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
   
   <!-- Title -->
-  <Text id="page-title" text="Dice toolkit" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3" />
+  <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+  	<Text id="page-title" text="Dice toolkit" />
+  </HBox>
   
   <!-- Dice row 1 -->
   <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="1">
@@ -35,10 +37,9 @@
   	<Text fx:id="rollName" text="Roll" />
   </VBox>
   
-  
   <!-- Ticker -->
-  <VBox id="vbox-ticker" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="3">
-  	<Text fx:id="tickerText" text="Roll..."></Text>
+  <VBox id="vbox-ticker" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="3" minHeight="165">
+  	<Text fx:id="tickerText" />
   </VBox>
   
   <stylesheets>

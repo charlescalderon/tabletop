@@ -16,10 +16,8 @@ public class DiceGUI extends Application {
         
         stage.setTitle("AD&D Dice Toolkit");
         stage.getIcons().add(new Image(this.getClass().getResourceAsStream("../img/D20.png")));
-        stage.setScene(new Scene(root, 1024, 768));
+        stage.setScene(new Scene(root, 500, 450));
         stage.show();
-        
-
     }
     
     public static void main(String[] args) {
