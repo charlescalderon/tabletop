@@ -1,5 +1,6 @@
 .root {
-     -fx-background-image: url("../img/background.jpg");
+     -fx-background-image: url("../img/textures/parchment_light.jpg");
+     -fx-display: block;
 }
 
 #page-title {
@@ -9,23 +10,31 @@
 	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
 
-#control-volume {
-	-fx-text-fill: red;
-	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+#rollName {
+	-fx-font-size: 32px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #818181;
+	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
 
-#control-acct {
-	-fx-text-fill: green;
-	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+#vbox-result {
+	-fx-border-width: 2px;
+	-fx-border-inset: 5px;
+	-fx-border-color: #4d2600;
+	-fx-background-radius: 5;
+	-fx-background-image: url("../img/textures/parchment_white.jpg");
+	-fx-shape: "M5 0 L95 0 L100 5 L100 195 L95 200 L5 200 L0 195 L0 5 L5 0 Z";
+    -fx-scale-shape: true;
 }
 
-#control-menu {
-	-fx-text-fill: blue;
-	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
-}
-
-.box {
-	-fx-background-color: green;
+#vbox-ticker {
+	-fx-border-width: 2px;
+	-fx-border-inset: 5px;
+	-fx-border-color: #4d2600;
+	-fx-background-radius: 5;
+	-fx-background-image: url("../img/textures/parchment_white.jpg");
+	-fx-shape: "M5 0 L295 0 L300 5 L300 160 L295 165 L5 165 L0 160 L0 5 L5 0 Z";
+    -fx-scale-shape: false;
 }
 
 .die {
@@ -34,9 +43,6 @@
     -fx-text-fill: #333333;
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
     -fx-text-alignment: center;
-}
-
-.die:hover {
 }
 
 .die .button {

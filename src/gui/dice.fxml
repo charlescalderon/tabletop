@@ -6,62 +6,41 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
 <GridPane fx:controller="gui.diceController" 
     xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" 
     styleClass="root" >
   <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
   
-  <Text id="page-title" text="Dice toolkit" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3" />
-  <Text id="control-volume" text="Volume" GridPane.columnIndex="3" GridPane.rowIndex="0" />
-  <Text id="control-acct" text="Account" GridPane.columnIndex="4" GridPane.rowIndex="0" />
-  <Text id="control-menu" text="Menu" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+  <!-- Title -->
+  <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+  	<Text id="page-title" text="Dice toolkit" />
+  </HBox>
   
-  <VBox id="vbox-dice" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.rowSpan="3">
-  	
-  	<HBox id="dice-d20-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d4" text="D4" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
-  	</HBox>
-  	<HBox id="dice-d6-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d6" text="D6" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
-  	</HBox>
-  	<HBox id="dice-d8-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d8" text="D8" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
-  	</HBox>
-  	<HBox id="dice-d10-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d10" text="D10" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
-  	</HBox>
-  	<HBox id="dice-d12-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d12" text="D12" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
-  	</HBox>
-  	<HBox id="dice-d20-hbox" styleClass="die" alignment="center">
-  		<Button id="dice-d20" text="D20" onAction="#handleSubmitButtonAction" minWidth="100" minHeight="75" />
-  	</HBox>
+  <!-- Dice row 1 -->
+  <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="1">
+	<Button id="dice-d4" text="D4" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d6" text="D6" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d8" text="D8" onAction="#rollDice" minWidth="75" minHeight="75" />
+  </HBox>
+  
+  <!-- Dice row 2 -->
+  <HBox id="hbox-dice" styleClass="die" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="2">
+	<Button id="dice-d10" text="D10" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d12" text="D12" onAction="#rollDice" minWidth="75" minHeight="75" />
+ 	<Button id="dice-d20" text="D20" onAction="#rollDice" minWidth="75" minHeight="75" />
+  </HBox>
+  
+  <!-- Roll result -->
+  <VBox id="vbox-result" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="2" alignment="center" minWidth="100">
+  	<Text fx:id="rollName" text="Roll" />
   </VBox>
   
-  <HBox id="hbox-favs" styleClass="box" spacing="10" alignment="top_left" GridPane.columnIndex="2" GridPane.rowIndex="2" >
-  	<Text id="hbox-favs-text" text="Favorite rolls" />
-  </HBox>
-  
-  <HBox id="hbox-freq" styleClass="box" spacing="10" alignment="top_left" GridPane.columnIndex="2" GridPane.rowIndex="3" >
-  	<Text id="hbox-freq-text" text="Frequent rolls" />
-  </HBox>
-  
-  <HBox id="hbox-char" styleClass="box" spacing="10" alignment="top_left" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.columnSpan="3" GridPane.rowSpan="2" >
-  	<Text id="hbox-char-text" text="Character / Modifiers" />
-  </HBox>
-  
-  <Text id="text-rollName" text="Roll name" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-  
-  <Text id="text-rollName" text="Roll" GridPane.columnIndex="0" GridPane.rowIndex="5" />
-  
-  <HBox id="hbox-dice-sel" styleClass="box" spacing="10" alignment="top_left" GridPane.columnIndex="2" GridPane.rowIndex="5" >
-  	<Text fx:id="diceText" text="Dice selection" />
-  </HBox>
-  
-  <HBox id="hbox-dice-sum" styleClass="box" spacing="10" alignment="top_left" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="6" >
-  	<Text id="hbox-dice-sum-text" text="Dice sums" />
-  </HBox>
+  <!-- Ticker -->
+  <VBox id="vbox-ticker" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="3" minHeight="165">
+  	<Text fx:id="tickerText" />
+  </VBox>
   
   <stylesheets>
     <URL value="@dice.css" />
