@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:controller="gui.controllers.characterController" 
+    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" 
+    styleClass="root" >
+  <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
+  
+  <!-- Title -->
+  <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+  	<Text id="page-title" text="Character toolkit" />
+  </HBox>
+  
+  <!-- Ability Scores -->
+  <VBox id="vbox-ability-scores" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.rowSpan="3">
+  	<VBox id="hbox-strength" styleClass="box-as" alignment="CENTER" minWidth="100" minHeight="100">
+  		<Text fx:id="textStrength" text="STR"></Text>
+  		<HBox id="hbox-mod-strength" styleClass="box-mod-as" alignment="CENTER" minWidth="50" minHeight="25">
+  			<Text fx:id="textModStrength" text="MODSTR"></Text>
+  		</HBox>
+  	</VBox>
+  	<VBox id="hbox-dexterity" styleClass="box-as" alignment="CENTER" minWidth="100" minHeight="100">
+  		<Text fx:id="textDexterity" text="DEX"></Text>
+  		<HBox id="hbox-mod-dexterity" styleClass="box-mod-as" alignment="CENTER" minWidth="50" minHeight="25">
+  			<Text fx:id="textModDexterity" text="MODSTR"></Text>
+  		</HBox>
+  	</VBox>
+  	<VBox id="hbox-constitution" styleClass="box-as" alignment="CENTER" minWidth="100" minHeight="100">
+  		<Text fx:id="textConstitution" text="CON"></Text>
+  		<HBox id="hbox-mod-consitution" styleClass="box-mod-as" alignment="CENTER" minWidth="50" minHeight="25">
+  			<Text fx:id="textModConstitution" text="MODSTR"></Text>
+  		</HBox>
+  	</VBox>
+  	<VBox id="hbox-intelligence" styleClass="box-as" alignment="CENTER" minWidth="100" minHeight="100">
+  		<Text fx:id="textIntelligence" text="INT"></Text>
+  		<HBox id="hbox-mod-intelligence" styleClass="box-mod-as" alignment="CENTER" minWidth="50" minHeight="25">
+  			<Text fx:id="textModIntelligence" text="MODSTR"></Text>
+  		</HBox>
+  	</VBox>
+  	<VBox id="hbox-wisdom" styleClass="box-as" alignment="CENTER" minWidth="100" minHeight="100">
+  		<Text fx:id="textWisdom" text="WIS"></Text>
+  		<HBox id="hbox-mod-wisomd" styleClass="box-mod-as" alignment="CENTER" minWidth="50" minHeight="25">
+  			<Text fx:id="textModWisdom" text="MODSTR"></Text>
+  		</HBox>
+  	</VBox>
+  	<VBox id="hbox-charisma" styleClass="box-as" alignment="CENTER" minWidth="100" minHeight="100">
+  		<Text fx:id="textCharisma" text="CHR"></Text>
+  		<HBox id="hbox-mod-charisma" styleClass="box-mod-as" alignment="CENTER" minWidth="50" minHeight="25">
+  			<Text fx:id="textModCharisma" text="MODSTR"></Text>
+  		</HBox>
+  	</VBox>
+  </VBox>
+  
+  <stylesheets>
+    <URL value="@../css/character.css" />
+  </stylesheets>
+  
+</GridPane>

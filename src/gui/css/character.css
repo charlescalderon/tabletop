@@ -1,0 +1,28 @@
+.root {
+     -fx-background-image: url("../../img/textures/parchment_light.jpg");
+     -fx-display: block;
+}
+
+#page-title {
+	-fx-font-size: 32px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #818181;
+	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.box-as {
+	-fx-border-width: 2px;
+	-fx-border-insets: 2px;
+	-fx-border-color: #4d2600;
+	-fx-background-image: url("../../img/textures/parchment_white.jpg");
+	-fx-shape: "M5 0 L95 0 L100 5 L100 195 L95 200 L5 200 L0 195 L0 5 L5 0 Z";
+    -fx-scale-shape: true;
+}
+
+.box-mod-as {
+	-fx-border-width: 2px;
+	-fx-border-insets: 5px;
+	-fx-border-color: #4d2600;
+	-fx-shape: "M5 0 L95 0 L100 5 L100 195 L95 200 L5 200 L0 195 L0 5 L5 0 Z";
+    -fx-scale-shape: true;
+}

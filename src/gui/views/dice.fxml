@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane fx:controller="gui.diceController" 
+<GridPane fx:controller="gui.controllers.diceController" 
     xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" 
     styleClass="root" >
   <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
@@ -43,7 +43,7 @@
   </VBox>
   
   <stylesheets>
-    <URL value="@dice.css" />
+    <URL value="@../css/dice.css" />
   </stylesheets>
   
 </GridPane>

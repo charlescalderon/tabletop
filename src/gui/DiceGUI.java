@@ -12,7 +12,7 @@ public class DiceGUI extends Application {
 	
 	@Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("dice.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("views/dice.fxml"));
         
         stage.setTitle("AD&D Dice Toolkit");
         stage.getIcons().add(new Image(this.getClass().getResourceAsStream("../img/D20.png")));

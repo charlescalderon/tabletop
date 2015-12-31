@@ -1,5 +1,5 @@
 .root {
-     -fx-background-image: url("../img/textures/parchment_light.jpg");
+     -fx-background-image: url("../../img/textures/parchment_light.jpg");
      -fx-display: block;
 }
 
@@ -19,20 +19,18 @@
 
 #vbox-result {
 	-fx-border-width: 2px;
-	-fx-border-inset: 5px;
 	-fx-border-color: #4d2600;
 	-fx-background-radius: 5;
-	-fx-background-image: url("../img/textures/parchment_white.jpg");
+	-fx-background-image: url("../../img/textures/parchment_white.jpg");
 	-fx-shape: "M5 0 L95 0 L100 5 L100 195 L95 200 L5 200 L0 195 L0 5 L5 0 Z";
     -fx-scale-shape: true;
 }
 
 #vbox-ticker {
 	-fx-border-width: 2px;
-	-fx-border-inset: 5px;
 	-fx-border-color: #4d2600;
 	-fx-background-radius: 5;
-	-fx-background-image: url("../img/textures/parchment_white.jpg");
+	-fx-background-image: url("../../img/textures/parchment_white.jpg");
 	-fx-shape: "M5 0 L295 0 L300 5 L300 160 L295 165 L5 165 L0 160 L0 5 L5 0 Z";
     -fx-scale-shape: false;
 }
@@ -57,25 +55,25 @@
 }
 
 #dice-d4 {
-	-fx-background-image: url("../img/D4.png");
+	-fx-background-image: url("../../img/D4.png");
 }
 
 #dice-d6 {
-	-fx-background-image: url("../img/D6.png");
+	-fx-background-image: url("../../img/D6.png");
 }
 
 #dice-d8 {
-	-fx-background-image: url("../img/D8.png");
+	-fx-background-image: url("../../img/D8.png");
 }
 
 #dice-d10 {
-	-fx-background-image: url("../img/D10.png");
+	-fx-background-image: url("../../img/D10.png");
 }
 
 #dice-d12 {
-	-fx-background-image: url("../img/D12.png");
+	-fx-background-image: url("../../img/D12.png");
 }
 
 #dice-d20 {
-	-fx-background-image: url("../img/D20.png");
+	-fx-background-image: url("../../img/D20.png");
 }

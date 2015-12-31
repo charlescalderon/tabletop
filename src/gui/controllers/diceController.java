@@ -1,10 +1,9 @@
-package gui;
+package gui.controllers;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,7 +19,6 @@ public class diceController implements Initializable {
 	private String tickerInitText = "Dice roll log";
     
 	@Override
-	
 	public void initialize(URL fxmlFileLocation, ResourceBundle resources) {
 		System.out.println("Initializing controller");
 		tickerText.setText(tickerInitText);
@@ -48,7 +46,7 @@ public class diceController implements Initializable {
     	int result = roll[0];
     	
     	// Set audio file for chosen die
-    	final URL resource = getClass().getResource("../audio/d" + Integer.toString(die) + ".wav");
+    	final URL resource = getClass().getResource("../../audio/d" + Integer.toString(die) + ".wav");
     	
     	// Play audio click
     	AudioClip dieRole = new AudioClip(resource.toString());
